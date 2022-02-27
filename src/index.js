@@ -4,9 +4,11 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import {TASK_DATA, FILTER_BUTTONS_NAME} from "./data";
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App tasks={TASK_DATA} filters={FILTER_BUTTONS_NAME}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
